@@ -1,0 +1,42 @@
+.infos-bar {
+  padding: 16px 24px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 6px;
+
+  &__infos {
+    display: flex;
+    gap: 40px;
+
+
+    &__item {
+      font-size: 14px;
+      color: #131313;
+
+      b {
+        font-size: 18px;
+        display: block;
+        color: #131313;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    display: block;
+
+    &__infos {
+      display: block;
+
+      &__item {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__infos {
+      gap: 16px; 
+    }
+  }
+}

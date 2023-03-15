@@ -1,0 +1,27 @@
+.button {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #8a59fa;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  
+  &:hover {
+    background-color: #a077ff;
+  }
+  
+  @media (max-width: 640px) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+}
